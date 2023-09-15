@@ -17,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${open_sans.className} container`}>
+    <html lang="en" className={`${open_sans.className} `}>
+      <body className='bg-[#F8F8F8]'>
         <Navbar />
         {children}
       </body>

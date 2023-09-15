@@ -1,38 +1,50 @@
-import { FC,ReactElement } from "react";
+import { FC, ReactElement } from "react";
 import Link from "next/link";
 import { bentham } from "@/app/layout";
+import { MapPinIcon, Bars2Icon } from "@heroicons/react/24/outline";
 
 const Navbar: FC = (): ReactElement => {
   return (
-    <header className="lg:pb-[11rem]">
-      <div className="relative h-32 bg-[#132340]"></div>
-      <nav className="flex flex-row-reverse md:flex-row items-center justify-between py-[16px] px-[12px] lg:px-0 border-b border-neutral-200">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth="1"
-          stroke="currentColor"
-          className="w-8 h-8 md:w-10 md:h-10 text-neutral-700 hover:text-[#B9AC92] duration-300"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 9h16.5m-16.5 6.75h16.5"
-          />
-        </svg>
+    <header className="lg:pb-[10rem] container">
+      <div
+        className="relative h-32 bg-site-header"
+        style={{
+          backgroundPosition: "center center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
+      <nav className="flex items-center justify-between py-[20px] px-[12px] lg:px-0 border-b border-neutral-200">
+        <Bars2Icon strokeWidth="0.8" className="block lg:hidden w-8 h-8" />
+        <div className="hidden lg:flex items-center gap-x-[32px]">
+          <Link
+            href="/"
+            className="hidden lg:block text-sm tracking-wide uppercase text-neutral-700 hover:text-[#B9AC92] font-[400] duration-300"
+          >
+            About
+          </Link>
+          <Link
+            href="/"
+            className="hidden lg:block text-sm tracking-wide uppercase text-neutral-700 hover:text-[#B9AC92] font-[400] duration-300"
+          >
+            Events
+          </Link>
+        </div>
         <Link
           href="/"
           className={`${bentham.className} text-2xl md:text-3xl text-neutral-800 uppercase`}
         >
           Gamma Creations
         </Link>
-        <Link
-          href="/"
-          className="hidden md:block text-base tracking-wide uppercase text-neutral-700 hover:text-[#B9AC92] font-[400] duration-300"
-        >
-          Contact
-        </Link>
+        <div className="flex items-center gap-x-[16px]">
+          <Link
+            href="/"
+            className="hidden lg:block text-sm tracking-wide uppercase text-neutral-700 hover:text-[#B9AC92] font-[400] duration-300"
+          >
+            Get in touch
+          </Link>
+          <MapPinIcon strokeWidth="0.8" className="w-6 h-6" />
+        </div>
       </nav>
     </header>
   );
