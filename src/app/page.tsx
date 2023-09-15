@@ -1,7 +1,12 @@
-import { FC, ReactElement } from "react";
+import HeroSection from "@/components/HeroSection";
+import { FC } from "react";
 
-const HomePage: FC = (): ReactElement => {
-  return <main className="min-h-screen relative"></main>;
+const HomePage: FC = () => {
+  return (
+    <main className="min-h-screen relative">
+      <HeroSection />
+    </main>
+  );
 };
 
 export default HomePage;

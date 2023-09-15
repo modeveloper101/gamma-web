@@ -1,13 +1,13 @@
 import { FC, ReactElement } from "react";
 import Link from "next/link";
-import { bentham } from "@/app/layout";
+import { lora, myFont } from "@/app/layout";
 import { MapPinIcon, Bars2Icon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const Navbar: FC = (): ReactElement => {
   return (
     <header className="lg:pb-[10rem] container">
       <div className="relative flex items-center justify-center h-11 bg-[#FAEBE2]">
-        <Link href="" className={`${bentham.className} text-xs uppercase`}>
+        <Link href="" className="text-xs lg:text-sm uppercase">
           Discover upcoming events
         </Link>
       </div>
@@ -29,7 +29,7 @@ const Navbar: FC = (): ReactElement => {
         </div>
         <Link
           href="/"
-          className={`${bentham.className} text-2xl md:text-3xl text-neutral-800 uppercase`}
+          className={`${myFont.className} text-2xl md:text-3xl text-neutral-800 uppercase`}
         >
           Gamma Creations
         </Link>
@@ -40,7 +40,7 @@ const Navbar: FC = (): ReactElement => {
           >
             Get in touch
           </Link>
-          <PhoneIcon strokeWidth="0.8" className="w-5 h-5" />
+          <PhoneIcon strokeWidth="1" className="w-5 h-5" />
         </div>
       </nav>
     </header>
