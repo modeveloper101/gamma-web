@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${lora.className} `}>
-      <body className="bg-[#F8F8F8] text-[#404C51]">
+      <body className="bg-[#F8F8F8] text-neutral-900">
         <div className="maintainance">Our website will be back soon!</div>
         <Navbar />
         {children}

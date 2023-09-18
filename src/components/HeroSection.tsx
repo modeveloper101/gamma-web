@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import earrings from "../../public/earrings.jpg";
+import earrings from "../../public/model-1.jpg";
 import ButtonPrimary from "./ButtonPrimary";
 import { myFont } from "@/app/layout";
 
@@ -12,10 +12,10 @@ const HeroSection: FC = () => {
         quality={100}
         alt="Earrings"
         priority={true}
-        className="h-[450px] mb-[60px] object-cover"
+        className="h-[480px] mb-[60px] object-cover"
       />
       <h4
-        className={`${myFont.className} mb-[12px] text-xs text-neutral-300 font-[300] tracking-wider uppercase`}
+        className={`${myFont.className} mb-[12px] text-xs text-neutral-400 font-[300] tracking-wider uppercase`}
       >
         Our mission
       </h4>
