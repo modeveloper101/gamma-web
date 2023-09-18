@@ -6,7 +6,7 @@ import { myFont } from "@/app/layout";
 
 const HeroSection: FC = () => {
   return (
-    <div className="container h-auto w-full flex flex-col items-center text-center">
+    <div className="h-auto w-full flex flex-col items-center text-center border-b pb-[60px]">
       <Image
         src={earrings}
         quality={100}
@@ -24,7 +24,7 @@ const HeroSection: FC = () => {
         until it is sent to the customer.
       </p>
       <ButtonPrimary size="small" href="/">
-        Discover our work
+        See our work
       </ButtonPrimary>
     </div>
   );
