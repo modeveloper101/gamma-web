@@ -19,7 +19,7 @@ const HeroSection: FC = () => {
       >
         Our mission
       </h4>
-      <p className="text-2xl leading-[2.5rem] px-[32px] pb-[32px]">
+      <p className="text-xl leading-[2.5rem] px-[60px] pb-[32px]">
         Each creation is produced entirely in-house, never leaving our workshop
         until it is sent to the customer.
       </p>

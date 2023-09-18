@@ -1,17 +1,40 @@
+"use client";
 import { FC, ReactElement } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
-import { lora, myFont } from "@/app/layout";
-import { MapPinIcon, Bars2Icon, PhoneIcon } from "@heroicons/react/24/outline";
+import { myFont } from "@/app/layout";
+import { Bars2Icon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const Navbar: FC = (): ReactElement => {
+  const [isNavbarSticky, setIsNavbarSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 25) {
+        setIsNavbarSticky(true);
+      } else {
+        setIsNavbarSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="lg:pb-[10rem] container">
+    <header className="lg:pb-[10rem]">
       <div className="relative flex items-center justify-center h-11 bg-neutral-900">
-        <Link href="" className="text-xs lg:text-sm text-white capitalize">
+        <Link href="" className="text-xs lg:text-sm text-white uppercase">
           Explore our events 2023
         </Link>
       </div>
-      <nav className="flex items-center justify-between py-[16px] lg:py-[48px] px-[20px] lg:px-0 border-b border-neutral-200">
+      <nav
+        className={`${
+          isNavbarSticky ? "fixed top-0 left-0 right-0" : ""
+        } flex items-center justify-between py-[16px] lg:py-[48px] px-[20px] lg:px-0 border-b border-neutral-200 bg-[#F8F8F8]`}
+      >
         <Bars2Icon
           strokeWidth="1"
           className="block lg:hidden w-8 h-8 text-neutral-900"

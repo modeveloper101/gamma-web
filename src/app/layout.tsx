@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -22,6 +23,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en" className={`${lora.className} `}>
       <body className="bg-[#F8F8F8] text-neutral-900">
