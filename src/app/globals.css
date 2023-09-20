@@ -42,23 +42,3 @@ body {
     display: none;
   }
 }
-
-/* Customize the indicators */
-.custom-carousel .carousel-indicators {
-  text-align: center; /* Center the indicators horizontally */
-}
-
-/* Style the individual indicator */
-.custom-carousel .carousel-indicators button {
-  width: 10px; /* Adjust the width of the indicator */
-  height: 10px; /* Adjust the height of the indicator */
-  border-radius: 50%; /* Make it a circle */
-  background-color: #333; /* Dark gray color for inactive indicators */
-  margin: 0 5px; /* Adjust the spacing between indicators */
-  cursor: pointer; /* Add a pointer cursor */
-}
-
-/* Style the active indicator */
-.custom-carousel .carousel-indicators .active {
-  background-color: #000; /* Black color for the active indicator */
-}
