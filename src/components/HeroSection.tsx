@@ -24,7 +24,7 @@ const HeroSection: FC = () => {
         until it is sent to the customer.
       </p>
       <ButtonPrimary size="small" href="/">
-        See our work
+        About us
       </ButtonPrimary>
     </div>
   );

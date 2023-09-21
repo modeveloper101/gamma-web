@@ -18,11 +18,11 @@ const EventItem: FC<EventItemProps> = ({ id, name, date, booth, img }) => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="h-[385px] w-full mb-[20px]"
+        className="h-[300px] w-full mb-[20px]"
       ></div>
       <div>
-        {/* <h3 className="text-base">{date}</h3> */}
-        <h3 className="text-lg pr-[40px]">{name} - <br/> {date}</h3>
+        <h3 className="text-sm mb-3">{date}</h3>
+        <h3 className="text-xl">{name}</h3>
       </div>
     </li>
   );

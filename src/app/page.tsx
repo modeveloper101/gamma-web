@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import { FC, useEffect, useState } from "react";
+import { FC } from "react";
 import EventData from "../../public/data/__Events.json";
 import EventList from "@/components/EventList";
 import CollectionSection from "@/components/CollectionSection";
@@ -11,7 +11,6 @@ const HomePage: FC = () => {
       <HeroSection />
       <CollectionSection />
       <EventList events={EventData} />
-      
     </main>
   );
 };

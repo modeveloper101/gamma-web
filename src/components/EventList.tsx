@@ -16,12 +16,12 @@ interface EventListProps {
 
 const EventList: FC<EventListProps> = ({ events }) => {
   return (
-    <div className="flex flex-col py-[60px] px-[20px] border-b ">
-      <div className="flex items-center justify-center text-center">
+    <div className="flex flex-col items-center text-center py-[60px] px-[48px] border-b">
+
         <h4 className={`${myFont.className} mb-[28px] text-xl uppercase`}>
           Events
         </h4>
-      </div>
+
       <ul className="flex flex-col gap-y-[44px]">
         {events.map((event) => (
           <EventItem
