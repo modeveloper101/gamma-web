@@ -14,7 +14,7 @@ export const myFont = localFont({ src: "./maiah-regular.ttf" });
 
 export const metadata: Metadata = {
   title: "Gamma Creations Co., Ltd",
-  description: "",
+  description: "gamma creations website",
 };
 
 export default function RootLayout({
