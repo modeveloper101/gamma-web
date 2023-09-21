@@ -3,6 +3,7 @@ import { FC } from "react";
 import EventData from "../../public/data/__Events.json";
 import EventList from "@/components/EventList";
 import CollectionSection from "@/components/CollectionSection";
+import Footer from "@/components/Footer";
 
 const HomePage: FC = () => {
 
@@ -11,6 +12,7 @@ const HomePage: FC = () => {
       <HeroSection />
       <CollectionSection />
       <EventList events={EventData} />
+      <Footer />
     </main>
   );
 };

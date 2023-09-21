@@ -8,7 +8,7 @@ const CollectionSection: FC = () => {
   return (
     <div className="h-[70vh] py-[60px] flex flex-col items-center border-b relative z-[-9999]">
       <CarouselComponent  collections={CollectionData}/>
-      <ButtonPrimary size="small" href="/" classname="mt-auto">See our work</ButtonPrimary>
+      <ButtonPrimary size="small" href="/" classname="mt-auto">See our workshop</ButtonPrimary>
     </div>
   );
 };

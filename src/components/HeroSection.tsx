@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import earrings from "../../public/model-1.jpg";
+import model from "../../public/model-1.jpg";
 import ButtonPrimary from "./ButtonPrimary";
 import { myFont } from "@/app/layout";
 
@@ -8,11 +8,11 @@ const HeroSection: FC = () => {
   return (
     <div className="h-auto w-full flex flex-col items-center text-center border-b pb-[60px]">
       <Image
-        src={earrings}
+        src={model}
         quality={100}
-        alt="Earrings"
+        alt="Model"
         priority={true}
-        className="h-[480px] mb-[60px] object-cover"
+        className="h-[70vh] mb-[60px] object-cover"
       />
       <h4
         className={`${myFont.className} mb-[12px] text-xs text-neutral-400 font-[300] tracking-wider uppercase`}
