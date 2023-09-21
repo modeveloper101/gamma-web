@@ -27,7 +27,7 @@ const Navbar: FC = (): ReactElement => {
     <header className="lg:pb-[10rem]">
       <div className="relative flex items-center justify-center h-11 bg-neutral-900">
         <Link href="" className="text-xs lg:text-sm text-white tracking-wider">
-          Explore our 2023's events
+          Explore our 2023 events
         </Link>
       </div>
       <nav
