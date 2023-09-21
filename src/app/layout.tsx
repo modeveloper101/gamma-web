@@ -9,7 +9,6 @@ export const lora = Lora({
   subsets: ["latin"],
   weight: ["400"],
   style: "normal",
-  variable: "--font-lato",
 });
 export const myFont = localFont({ src: "./maiah-regular.ttf" });
 
