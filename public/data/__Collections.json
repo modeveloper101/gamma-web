@@ -1,14 +1,14 @@
 [
   {
     "id": 1,
-    "name": "Eternity Sliver Ring",
+    "name": "Eternity sliver ring",
     "collection": "Eternity Collection",
     "img": "/silver-ring.png"
   },
   {
     "id": 2,
-    "name": "Diamond Gold Ring",
-    "collection": "Diamond Collection",
-    "img": "/gold-ring.png"
+    "name": "Solitaire gold necklace",
+    "collection": "Solitaire Collection",
+    "img": "/necklace.png"
   }
 ]
