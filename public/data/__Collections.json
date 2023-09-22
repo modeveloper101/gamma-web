@@ -10,5 +10,11 @@
     "name": "Solitaire gold necklace",
     "collection": "Solitaire Collection",
     "img": "/necklace.png"
+  },
+  {
+    "id": 3,
+    "name": "Blue sapphire gold braclet",
+    "collection": "Sapphire Collection",
+    "img": "/braclet-2.png"
   }
 ]

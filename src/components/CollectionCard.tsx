@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { myFont } from "@/app/layout";
-
+import Image from "next/image";
 interface CollectionCardProps {
   id: number;
   name: string;
@@ -16,8 +16,12 @@ const CollectionCard: FC<CollectionCardProps> = ({
 }) => {
   return (
     <div key={id} className="flex flex-col items-center justify-center ">
-      <img
+      <Image
         src={img}
+        priority={true}
+        width={500}
+        height={500}
+        quality={100}
         alt={name}
         className="h-[245px] w-auto object-cover drop-shadow-lg z-[99999]"
       />
