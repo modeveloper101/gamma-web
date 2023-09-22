@@ -3,21 +3,21 @@ import { FC } from "react";
 
 const Footer: FC = () => {
   return (
-    <div className="h-auto flex flex-col items-center pt-[7rem] pb-[52px] px-[48px]">
+    <div className="h-auto flex flex-col items-center pt-[6rem] pb-[52px] px-[48px]">
       <div>
         <ul className="flex items-center justify-center flex-wrap gap-x-[24px] mb-[28px]">
           <li>
-            <Link href="/" className="text-sm tracking-wider uppercase">
+            <Link href="/" className="text-xs tracking-wider uppercase">
               About us
             </Link>
           </li>
           <li>
-            <Link href="/" className="text-sm tracking-wider uppercase">
+            <Link href="/" className="text-xs tracking-wider uppercase">
               Workshop
             </Link>
           </li>
           <li>
-            <Link href="/" className="text-sm tracking-wider uppercase">
+            <Link href="/" className="text-xs tracking-wider uppercase">
               Contact
             </Link>
           </li>

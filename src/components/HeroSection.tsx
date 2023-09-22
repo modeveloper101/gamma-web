@@ -12,7 +12,7 @@ const HeroSection: FC = () => {
         quality={100}
         alt="Model"
         priority={true}
-        className="h-[70vh] mb-[60px] object-cover"
+        className="h-[60vh] mb-[60px] object-cover"
       />
       <h4
         className={`${myFont.className} mb-[12px] text-xs text-neutral-400 font-[300] tracking-wider uppercase`}
