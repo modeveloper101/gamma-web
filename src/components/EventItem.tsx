@@ -10,7 +10,7 @@ interface EventItemProps {
 
 const EventItem: FC<EventItemProps> = ({ id, name, date, booth, img }) => {
   return (
-    <li key={id} className="pb-[16px]">
+    <li key={id}>
       <div
         style={{
           backgroundImage: `url(${img})`,
@@ -18,10 +18,10 @@ const EventItem: FC<EventItemProps> = ({ id, name, date, booth, img }) => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="h-[300px] w-full mb-[20px]"
+        className="h-[300px] w-full "
       ></div>
       <div>
-        <h3 className="text-sm mb-3">{date}</h3>
+        <h3 className="text-sm my-4">{date}</h3>
         <h3 className="text-xl">{name}</h3>
       </div>
     </li>
