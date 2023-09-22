@@ -16,7 +16,7 @@ interface EventListProps {
 
 const EventList: FC<EventListProps> = ({ events }) => {
   return (
-    <div className="flex flex-col items-center text-center py-[60px] px-[32px] border-b">
+    <div className="flex flex-col items-center py-[60px] px-[32px] border-b">
 
         <h4 className={`${myFont.className} mb-[28px] text-xl uppercase`}>
           Events
