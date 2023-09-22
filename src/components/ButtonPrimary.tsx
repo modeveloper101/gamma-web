@@ -18,7 +18,7 @@ const ButtonPrimary: FC<ButtonPrimaryProps> = ({
     <Link
       href={href}
       className={`${
-        size === "default" ? "text-sm" : "text-xs"
+        size === "default" ? "text-sm" : "text-[13px]"
       } w-fit  border-b border-[#DEB49C] pb-[8px] tracking-wider uppercase ${classname}`}
     >
       {children}
