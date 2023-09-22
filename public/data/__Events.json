@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "HKTDC Hong Kong International Jewelry Show",
+    "date": "March 1, 2023",
+    "booth": "GF-F110",
+    "img": "hongkong.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Vicenza Oro - Pavillion 5",
+    "date": "September 8, 2023",
+    "booth": "136",
+    "img": "vicenza2.webp"
+  }
+]

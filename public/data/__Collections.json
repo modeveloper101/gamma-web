@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Eternity Sliver Ring",
+    "collection": "Eternity Collection",
+    "img": "/silver-ring.png"
+  },
+  {
+    "id": 2,
+    "name": "Diamond Gold Ring",
+    "collection": "Diamond Collection",
+    "img": "/gold-ring.png"
+  }
+]
